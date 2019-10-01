@@ -1,12 +1,32 @@
 package controle;
 
-
+/**
+ * Representacao de um aluno, contendo nome,matricula e curso. O aluno
+ * e identificado unicamente por sua matricula.
+ * 
+ * @author Lucian Julio
+ *
+ */
 public class Aluno {
-	
+	/**
+	 * nome do aluno
+	 */
 	private String nome;
+	/**
+	 * matricula do aluno
+	 */
 	private String matricula;
+	/**
+	 * curso do launo
+	 */
 	private String curso;
 	
+	/**
+	 * Constroi um aluno
+	 * @param matricula matricula do aluno
+	 * @param nome nome do aluno
+	 * @param curso curso do aluno
+	 */
 	public Aluno(String matricula, String nome, String curso) {
 		Util.validarStringNull("Nao e permitido nome nulo!", nome);
 		Util.validarStringVazia("Nao e permitido nome vazio!", nome);
@@ -19,19 +39,35 @@ public class Aluno {
 		this.curso = curso;
 	}
 	
+	/**
+	 * Representacao em String de um objeto aluno.
+	 */
 	@Override
 	public String toString() {
 		return "Aluno: "+this.matricula+" - "+this.nome + " - "+this.curso;
 	}
 	
+	
+	/**
+	 * Pega o nome do aluno
+	 * @return o nome do aluno
+	 */
 	public String getNome() {
 		return nome;
 	}
-
+	
+	/**
+	 * Pega a matricula do aluno
+	 * @return a matricula do aluno.
+	 */
 	public String getMatricula() {
 		return matricula;
 	}
 	
+	/**
+	 * Pega o curso do aluno
+	 * @return o curso do aluno.
+	 */
 	public String getCurso() {
 		return curso;
 	}
@@ -44,6 +80,10 @@ public class Aluno {
 		return result;
 	}
 	
+	/**
+	 * Compara se o objeto aluno e igual a outro objeto, usando a matricula
+	 * @param obj Objeto a ser comparado.
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
