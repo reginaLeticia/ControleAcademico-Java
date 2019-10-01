@@ -49,6 +49,12 @@ public class GrupoDeEstudo {
 	}
 	
 
+	/**
+	 * Retorna um valor inteiro que representa o hashcode do objeto, que é obtido
+	 * atravez da matricula.
+	 * 
+	 * @return inteiro que representa o hashcode.
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
