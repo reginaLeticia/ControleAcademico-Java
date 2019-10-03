@@ -29,12 +29,12 @@ public class Aluno {
 	 * @param curso     curso do aluno
 	 */
 	public Aluno(String matricula, String nome, String curso) {
-		Util.validarStringNull("Nao e permitido nome nulo!", nome);
-		Util.validarStringVazia("Nao e permitido nome vazio!", nome);
-		Util.validarStringNull("Nao e permitido matricula nula!", matricula);
-		Util.validarStringVazia("Nao e permitido matricula vazia!", matricula);
-		Util.validarStringNull("Nao e permitido curso nulo!", curso);
-		Util.validarStringVazia("Nao e permitido curso nulo!", curso);
+		Util.validarStringNull("Não é permitido nome nulo!", nome);
+		Util.validarStringVazia("Não é permitido nome vazio!", nome);
+		Util.validarStringNull("Não é permitido matricula nula!", matricula);
+		Util.validarStringVazia("Não é permitido matricula vazia!", matricula);
+		Util.validarStringNull("Não é permitido curso nulo!", curso);
+		Util.validarStringVazia("Não é permitido curso nulo!", curso);
 		this.nome = nome;
 		this.matricula = matricula;
 		this.curso = curso;
@@ -54,7 +54,7 @@ public class Aluno {
 	 * @return o nome do aluno
 	 */
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	/**
@@ -63,7 +63,7 @@ public class Aluno {
 	 * @return a matricula do aluno.
 	 */
 	public String getMatricula() {
-		return matricula;
+		return this.matricula;
 	}
 
 	/**
@@ -72,11 +72,11 @@ public class Aluno {
 	 * @return o curso do aluno.
 	 */
 	public String getCurso() {
-		return curso;
+		return this.curso;
 	}
 
 	/**
-	 * Retorna um valor inteiro que representa o hashcode do objeto, que � obtido
+	 * Retorna um valor inteiro que representa o hashcode do objeto, que � obtido
 	 * atravez da matricula.
 	 * 
 	 * @return inteiro que representa o hashcode.
